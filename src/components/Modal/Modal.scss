@@ -1,0 +1,85 @@
+@import '../../assets/css/variables';
+.modal-wrapper {
+	position:fixed;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:#313131d3;
+	z-index:100;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	opacity:0;
+	visibility:hidden;
+	transition:all 0.3s ease .0s;
+	padding:20px 20px 20px 20px;
+  // overflow: scroll;
+}
+.showModalWindow.modal-wrapper {
+	opacity:1;
+	visibility:visible;
+}
+.modal-row {
+  position: relative;
+  max-width:400px;
+  height: 470px;
+  background-color:#fff;
+	border-radius:10px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	padding:20px 20px 20px 20px;
+  overflow: auto; /*обязательно*/
+  z-index: 12;
+}
+.modal-block {
+  height: 100%;
+ overflow: auto;
+}
+.modal-row form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+  justify-content: center;
+}
+.modal-icon {
+ 
+padding: 0px 0px 0px 0px;
+}
+.modal-icon img {
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+}
+.modal-text {
+	text-align:center;
+ 
+	margin:20px 0px 20px 0px;
+	font-size:16px;
+}
+.modal-input {
+	width:70%;
+	height:40px;
+	margin:0px 0px 20px 0px;
+	border:1px solid $pink;
+}
+.modal-textarea {
+	width:70%;
+	height:150px;
+	resize:none;
+	border:1px solid $pink;
+}
+.modal-cancelButton {
+	position:absolute;
+	top:10px;
+	right:10px;
+	width:30px;
+	height:30px;
+	cursor:pointer;
+}
+.modal-button {
+	margin:40px 0px 0px 0px;
+}

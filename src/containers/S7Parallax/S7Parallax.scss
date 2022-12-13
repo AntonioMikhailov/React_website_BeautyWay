@@ -1,0 +1,93 @@
+
+ 
+.s7 {
+	position:relative;
+ margin:120px 0px 0px 0px;
+	background:url("../../assets/img/sec-7.webp") 0px 0px no-repeat ;
+	background-attachment:fixed;
+	background-position:center top 80px;
+ display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+  &-textRow {
+    padding:150px 20px 150px 20px;
+  }
+  &-text {
+    text-transform:uppercase;
+    color:rgb(255,255,255);
+    font-size:26px;
+    text-align:center;
+    letter-spacing:0.07rem;
+  }
+  &-title {
+    font-family:b;
+    font-size:135px;
+    color:rgb(255,255,255);
+    margin:20px 0px 0px 0px;
+    text-align:center;
+    line-height:60%;
+    word-spacing:-0.6ch;
+  }
+  &-button {
+    margin:0 auto;
+    margin-top:80px;
+  }
+  @media screen and (max-width:950px) {
+    & {
+    margin:90px 0px 0px 0px;
+  }
+  &-textRow {
+    padding:100px 20px 100px 20px;
+  }
+  &-title {
+    font-size:115px;
+    margin:30px 0px 0px 0px;
+    word-spacing:-0.6ch;
+  }
+  &-text {
+    font-size:22px;
+  }
+  }
+  @media screen and (max-width:768px) {
+    & {
+    margin:60px 0px 0px 0px;
+    background:url("../../assets/img/sec-7-Tablet-2.webp") 0px 0px no-repeat;
+    background-position:left 25% top 80px;
+    background-attachment:fixed;
+  }
+  &-textRow {
+    padding:60px 20px 60px 20px;
+  }
+  &-button {
+    margin-top:60px;
+  }
+  }
+  @media screen and (max-width:500px) {
+    &-title {
+    font-size:90px;
+    margin:20px 0px 0px 0px;
+    word-spacing:-0.6ch;
+  }
+  &-text {
+    font-size:18px;
+  }
+  }
+  @media screen and (max-width:360px) {
+    & {
+    margin:30px 0px 0px 0px;
+  }
+  &-title {
+    font-size:70px;
+    margin:20px 0px 0px 0px;
+    word-spacing:-0.6ch;
+  }
+  &-text {
+    font-size:14px;
+  }
+  &-button {
+    margin-top:40px;
+  }
+  }
+
+} //

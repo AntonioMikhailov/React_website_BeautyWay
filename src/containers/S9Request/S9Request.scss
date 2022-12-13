@@ -1,0 +1,131 @@
+ 
+
+.s9 {
+	position:relative;
+	background:url('../../assets/img/sec-9.webp') 0px 0px no-repeat;
+	background-attachment:fixed;
+	background-position:center top;
+	padding:40px 0px 40px 0px;
+
+  &-row {
+    max-width:650px;
+    margin-left:auto;
+    padding:40px 20px 40px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  &-title {
+    font-size:75px;
+    font-family:b;
+    color:#ffffff;
+    text-align:center;
+    line-height:70%;
+  }
+  &-icon {
+    width:50px;
+    margin:20px 0px 0px 0px;
+  }
+  &-icon img {
+    width:100%;
+  }
+  &-request__wrapper {
+    max-width:600px;
+    overflow:hidden;
+  }
+  &-request__row {
+    display:flex;
+    transition:all 0.9s ease .0s;
+  }
+  &-request__itemRow {
+    flex-basis:100%;
+    flex-shrink:0;
+  }
+  &-req__item {
+    color:#ffffff;
+    text-align:center;
+    margin:30px 30px 0px 30px;
+  }
+  &-req__itemName {
+    text-align:center;
+    color:#ffffff;
+    margin:20px 0px 0px 0px;
+    font-style:italic;
+  }
+  &-buttonRow {
+    display:flex;
+    margin:40px 0px 0px 0px;
+  }
+  &-button__item {
+    width:20px;
+    height:20px;
+    background-color:rgb(209,209,209);
+    border-radius:50%;
+    margin:0px 20px 0px 0px;
+    cursor:pointer;
+    transition:all 0.3s ease .0s;
+  }
+  &-button__item:last-child {
+    margin:0px 0px 0px 0px;
+  }
+  &-active.s9-button__item {
+    background-color:$pink;
+  }
+  @media screen and (max-width:1000px) {
+    & {
+    background-position:25% top;
+  }
+  }
+  @media screen and (max-width:768px) {
+    & {
+    background:url('../../assets/img/sec-9-Tablet-2.webp') 0px 0px no-repeat;
+    background-position:50% top;
+    background-attachment:fixed;
+    padding:50px 0px 50px 0px;
+  }
+  &-req__item {
+    font-size:16px;
+    margin:20px 20px 0px 20px;
+  }
+  &-req__itemName {
+    font-size:16px;
+    margin:20px 0px 0px 0px;
+  }
+  &-buttonRow {
+    display:flex;
+    margin:20px 0px 0px 0px;
+  }
+  &-icon {
+    width:35px;
+    margin:10px 0px 0px 0px;
+  }
+  &-title {
+    font-size:65px;
+  }
+  &-button__item {
+    width:15px;
+    height:15px;
+    margin:0px 20px 0px 0px;
+  }
+  }
+  @media screen and (max-width:600px) {
+    & {
+    padding:0px 0px 0px 0px;
+  }
+  &-row {
+    padding:20px 20px 20px 20px;
+  }
+  &-request__wrapper {
+    max-width:400px;
+  }
+  }
+  @media screen and (max-width:450px) {
+    &-request__wrapper {
+    max-width:300px;
+  }
+  &-title {
+    font-size:55px;
+  }
+  }
+}

@@ -1,0 +1,190 @@
+ 
+.s5 {
+	padding:120px 0px 0px 0px;
+ 
+  &-text {
+    max-width:900px;
+    text-align:center;
+    margin:0 auto;
+    margin-top:40px;
+    padding:0px 20px 0px 20px;
+  }
+  &-row__wrapper {
+    width:100%;
+    background-color:$violet;
+    padding:70px 0px 40px 0px;
+    margin:50px 0px 0px 0px;
+  }
+  &-row {
+    display:flex;
+    column-gap:40px;
+  }
+  &-left {
+    flex-basis:60%;
+  }
+  .accord-active &-left__accordItem {
+    padding:0px 0px 30px 0px;
+    border-bottom:1px solid $pink;
+    margin:0px 0px 40px 0px;
+  }
+  &-accord__title {
+    width:100%;
+    color:#ffffff;
+    position:relative;
+    font-size:35px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0px 0px 10px 0px;
+    margin:0px 0px 20px 0px;
+    border-bottom:1px solid $pink;
+    transition:all 0.3s ease .0s;
+    cursor:pointer;
+  }
+  
+  .accord-active.s5-accord__title {
+    color:$pink;
+  }
+  &-accord__title::after {
+    content:'\e920';
+    position:absolute;
+    right:0px;
+    top:18px;
+    font-size:14px;
+    font-family:s;
+    transition:all 0.3s ease .0s;
+  }
+  .accord-active.s5-accord__title::after {
+    content:'\e920';
+    position:absolute;
+    display:inline-block;
+    transform:rotate(180deg);
+    right:0px;
+    top:18px;
+    font-size:14px;
+    font-family:s;
+    color:$pink;
+  }
+  &-accord__textWrapper {
+    max-height: 0px;
+    overflow:hidden;
+    transition:all 0.7s ease .0s;
+  }
+  .accord-active.s5-accord__textWrapper {
+    max-height:100%;
+    transition:all 1.5s ease .0s;
+  }
+ 
+  &-accordText__text {
+    color:#ffffff;
+    margin:0px 0px 10px 0px;
+  }
+  &-accordText__title {
+    color:#ffffff;
+    font-size:25px;
+    border-bottom:1px solid $pink;
+    padding:0px 0px 10px 0px;
+    margin:30px 0px 10px 0px;
+  }
+  &-accordText__bullettextCircle {
+    color:#ffffff;
+    list-style:inside disc;
+    margin:0px 0px 10px 0px;
+  }
+  &-accordText__bullettextLine {
+    position:relative;
+    color:#ffffff;
+    margin:0px 0px 10px 0px;
+  }
+  &-accordText__bullettextLine::before {
+    content:'\2013';
+  }
+  &-accordText__textCircle {
+    color:#ffffff;
+  }
+  &-right {
+    flex-basis:40%;
+  }
+  &-right__row {
+    position:relative;
+  }
+  &-right__image {
+    position:absolute;
+    top:0;
+    transition:all 0.5s ease .0s;
+    visibility:hidden;
+    opacity:0;
+  }
+  &-right__image img {
+    width:100%;
+  }
+  .accord-active.s5-right__image {
+    position:relative;
+    visibility:visible;
+    opacity:1;
+  }
+  @media screen and (max-width:900px) {
+    & {
+    padding:90px 0px 0px 0px;
+  }
+  &-row__wrapper {
+    padding:50px 0px 20px 0px;
+    margin:50px 0px 0px 0px;
+  }
+  &-accord__title {
+    font-size:28px;
+  }
+  &-accordText__title {
+    font-size:22px;
+    margin:30px 0px 10px 0px;
+  }
+  &-accord__title::after, .accord-active.s5-accord__title::after {
+    font-size:10px;
+    top:14px;
+  }
+  }
+  @media screen and (max-width:768px) {
+    & {
+    padding:60px 0px 0px 0px;
+  }
+  &-row__wrapper {
+    padding:40px 0px 20px 0px;
+    margin:30px 0px 0px 0px;
+  }
+  &-text {
+    margin:20px 0px 0px 0px;
+  }
+  }
+  @media screen and (max-width:600px) {
+    & {
+    padding:50px 0px 0px 0px;
+  }
+  &-row {
+    flex-wrap:wrap;
+    column-gap:40px;
+  }
+  &-left {
+    flex-basis:100%;
+  }
+  &-right {
+    flex-basis:100%;
+    order:-1;
+    margin:0px 0px 30px 0px;
+  }
+  }
+  @media screen and (max-width:400px) {
+    &-row__wrapper {
+    padding:40px 0px 10px 0px;
+    margin:30px 0px 0px 0px;
+  }
+  &-accord__title {
+    font-size:24px;
+  }
+  &-accordText__title {
+    font-size:20px;
+    margin:20px 0px 10px 0px;
+  }
+  }
+  
+
+} //
