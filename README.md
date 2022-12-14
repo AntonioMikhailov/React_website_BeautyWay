@@ -1,5 +1,5 @@
 # React_website_BeautyWay
-&nbsp;
+ 
 
 ##### Реализация данного сайта через функциональный подход
 [JavaScript_website_BeautyWay_functional](https://github.com/AntonioMikhailov/JavaScript_website_BeautyWay_functional 'JavaScript_website_BeautyWay_functional')
