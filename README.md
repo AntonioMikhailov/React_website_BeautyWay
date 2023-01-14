@@ -15,7 +15,7 @@
 
 &nbsp;
 ## Используемые языки, технологии, пакеты:
--	React JS (Hooks), JavaScript, HTML, SASS
+-	React JS (Hooks), JavaScript, HTML, SCSS
 -	Create-react-app
 
 ## Реализация функционала и логики
